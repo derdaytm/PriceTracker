@@ -14,7 +14,7 @@ def get_amazon_product_page(url):
         else:
             print("Üzgünüz, istek başarısız oldu. Durum Kodu:", response.status_code)
             print("Tekrar Deneniyor...")
-            time.sleep(300)
+            time.sleep(120)
             return get_amazon_product_page(url)
 
 def extract_product_info(page_content, website):

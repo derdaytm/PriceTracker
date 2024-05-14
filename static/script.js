@@ -31,4 +31,4 @@ function updatePriceContainer(price, date) {
     priceContainer.appendChild(newPriceEntry);
 }
 
-setInterval(getPrice, 3600000);
+setInterval(getPrice, 14400000);
