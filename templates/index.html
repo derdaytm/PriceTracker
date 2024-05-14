@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Ürün Fiyat Takipçisi</title>
+</head>
+<body>
+    <div class="container"> 
+       <h1><u>Ürün Fiyat Takipçisi</u></h1>
+        <form id="productForm">
+            <input type="text" id="productLink" name="url" placeholder="Ürün Linkini Girin">
+            <button type="button" onclick="getPrice()">Fiyatı Takip Et</button>
+        </form>
+        <h2><u>Eski Kayıtlar</u></h2>
+        <div id="priceContainer">
+        </div>
+    </div>
+</body>
+</html>
